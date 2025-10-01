@@ -18,6 +18,37 @@
             position: relative;
             min-height: 100vh;
         }
+        h1, h2, h3, h4 {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #003483;
+            color: #fff;
+            text-decoration: none;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+        a:hover {
+            background: #fff;
+            color: #00831f;
+        }
+        .dancing-rat {
+           position: absolute;
+           
+           width: 100px;
+           height: 100px;
+
+        }
         .video-bg {
             position: fixed;
             top: 0;
@@ -37,7 +68,7 @@
             outline-width: 2px;
         }
         .subheading:hover {
-            color: #ffcc00;
+            color: #0f6102;
             outline-color: #282620;
             outline-style: dashed;
             flex-wrap: wrap;
@@ -54,29 +85,61 @@
             display: block;
             border: 5px solid #fff;
             border-radius: 20px;
-            margin: 40px auto;
+            margin: 20px auto;
+            position: absolute;
+            top: 150px;
+            left: 580px;
+        }
+        form {
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #fff;
+            position: absolute;
+            border-radius: 10px;
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.7);
         }
     </style>
 </head>
 <body>
     
-    <video class="video-bg" autoplay muted loop playsinline>
-        <source src="https://github.com/MayankShekherchaturvedi/sangoj-banana/blob/main/0109%20(1).mp4" type="video/mp4">
+    <video class="sangoj-banana/video-bg" autoplay muted loop playsinline>
+        <source src="0109 (1).mp4" type="video/mp4">
     </video>
 
-    <h1>Welcome to My CBT Dungone</h1>
-    <h2>I am shanking it baby!!.</h2>
-    <h3 class="subheading" >
-        Balls and a lot of Balls
+    <h1 style="text-align: center;">Welcome to My CBT Dungeon</h1>
+    <h2 style="text-align: center;">I am shanking it baby!!.</h2>
+    <img class = "dancing-rat" src="https://media.tenor.com/_AZJmhAry0gAAAAi/rat-dancing-meme.gif" alt="dancing rat" style="top: 10px; left: 450px;"> 
+    <img class = "dancing-rat" src="https://media.tenor.com/_AZJmhAry0gAAAAi/rat-dancing-meme.gif" alt="dancing rat" style="top: 10px; left: 960px;"> 
+   
+   <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+    <h3 class="subheading" style="text-align: center;" style="left: 20px; top: 700px; position: absolute;">
+        Click to learn more about my big ball sucking addiction
     </h3>
     <video class ="succk" autoplay muted loop>
-        <source src="https://github.com/MayankShekherchaturvedi/sangoj-banana/blob/main/WhatsApp%20Video.mp4" type="video/mp4">
+        <source src="sangoj-banana/WhatsApp Video.mp4" type="video/mp4">
     </video>
-    <h4 class="subheading">
-        i am a big ball sucker
-    </h4>
-    <img src="https://www.givelegacy.com/vnext/wp-content/uploads/2023/03/hit-in-the-balls-1024x681.jpeg" alt="Balls Image" width="500">
-    <div class="tenor-gif-embed" data-postid="27129130" data-share-method="host"  data-width="25%"><a href="https://tenor.com/view/playing-golf-ball-mae-muller-i-just-came-to-dance-song-fidgeting-the-golf-ball-shuffling-balls-on-my-hand-gif-27129130">Playing Golf Ball Mae Muller GIF</a>from <a href="https://tenor.com/search/playing+golf+ball-gifs">Playing Golf Ball GIFs</a></div> 
-    <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+    <form action="/submit" method="post" style="left: 20px; top: 525px;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="mobileno">Mobile No:</label>
+        <input type="tel" id="mobileno" name="mobileno" placeholder="Your mobile number" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email address" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+        <br><br>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" placeholder="Your address" required></textarea>
+        <br><br>
+        <input type="submit" value="Register" style="background-color: #00831f; color: #fff; border: none; padding: 15px 50px; border-radius: 5px; cursor: pointer;">
 </body>
 </html>
